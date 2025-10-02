@@ -1,0 +1,49 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Визитка — Беляев Сергей</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <header class="card__header">
+      <h1 class="name">Беляев Сергей</h1>
+      <p class="title">Просто челик</p>
+    </header>
+
+    <section class="about">
+      <h2>Обо мне</h2>
+      <p>Я молодец и вообще крутой</p>
+    </section>
+
+    <section class="hobbies">
+      <h2>Хобби</h2>
+      <ul>
+        <li>ХоббиХорсинг — катаюсь на палке</li>
+        <li>Фурри Комьюнити — люблю бегать в фурсьюте</li>
+        <li>ЛукМаксинг — sigma 9/10</li>
+      </ul>
+    </section>
+
+    <section class="contacts">
+      <h2>Контакты</h2>
+      <ul>
+        <li>Email: <a href="mailto:tyki1713@mail.ru">tyki1713@mail.ru</a></li>
+        <li>Telegram: <a href="#">@Tyki1337</a></li>
+      </ul>
+    </section>
+
+    <footer class="card__footer">
+      <small>© <span id="year"></span> Беляев Сергей — Все права защищены</small>
+    </footer>
+  </main>
+
+  <script>
+    // Автоматически подставляем текущий год
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
